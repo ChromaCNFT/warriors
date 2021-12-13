@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/warriors/static/css/main.21f339a2.chunk.css",
-    "main.js": "/warriors/static/js/main.e146f121.chunk.js",
-    "main.js.map": "/warriors/static/js/main.e146f121.chunk.js.map",
+    "main.css": "/warriors/static/css/main.20114254.chunk.css",
+    "main.js": "/warriors/static/js/main.82dd8720.chunk.js",
+    "main.js.map": "/warriors/static/js/main.82dd8720.chunk.js.map",
     "runtime-main.js": "/warriors/static/js/runtime-main.6ce589d8.js",
     "runtime-main.js.map": "/warriors/static/js/runtime-main.6ce589d8.js.map",
     "static/css/2.54b769b1.chunk.css": "/warriors/static/css/2.54b769b1.chunk.css",
-    "static/js/2.bd0a65e1.chunk.js": "/warriors/static/js/2.bd0a65e1.chunk.js",
-    "static/js/2.bd0a65e1.chunk.js.map": "/warriors/static/js/2.bd0a65e1.chunk.js.map",
+    "static/js/2.7cfaa6be.chunk.js": "/warriors/static/js/2.7cfaa6be.chunk.js",
+    "static/js/2.7cfaa6be.chunk.js.map": "/warriors/static/js/2.7cfaa6be.chunk.js.map",
     "index.html": "/warriors/index.html",
     "static/css/2.54b769b1.chunk.css.map": "/warriors/static/css/2.54b769b1.chunk.css.map",
-    "static/css/main.21f339a2.chunk.css.map": "/warriors/static/css/main.21f339a2.chunk.css.map",
-    "static/js/2.bd0a65e1.chunk.js.LICENSE.txt": "/warriors/static/js/2.bd0a65e1.chunk.js.LICENSE.txt",
+    "static/css/main.20114254.chunk.css.map": "/warriors/static/css/main.20114254.chunk.css.map",
+    "static/js/2.7cfaa6be.chunk.js.LICENSE.txt": "/warriors/static/js/2.7cfaa6be.chunk.js.LICENSE.txt",
     "static/media/header.scss": "/warriors/static/media/Poppins-Regular.8081832f.ttf",
     "static/media/agility.00edb36e.svg": "/warriors/static/media/agility.00edb36e.svg",
     "static/media/attack.63bb0679.svg": "/warriors/static/media/attack.63bb0679.svg",
@@ -40,6 +40,9 @@
     "static/media/head7.823dcfdd.png": "/warriors/static/media/head7.823dcfdd.png",
     "static/media/head8.14d5c165.png": "/warriors/static/media/head8.14d5c165.png",
     "static/media/head9.0cc70cb5.png": "/warriors/static/media/head9.0cc70cb5.png",
+    "static/media/head_0.6a401038.png": "/warriors/static/media/head_0.6a401038.png",
+    "static/media/head_1.1328afcd.png": "/warriors/static/media/head_1.1328afcd.png",
+    "static/media/head_2.3d9c6b23.png": "/warriors/static/media/head_2.3d9c6b23.png",
     "static/media/herous.9d4c1fe8.png": "/warriors/static/media/herous.9d4c1fe8.png",
     "static/media/intelligence.a269b90b.svg": "/warriors/static/media/intelligence.a269b90b.svg",
     "static/media/logo.61b20fac.svg": "/warriors/static/media/logo.61b20fac.svg",
@@ -59,8 +62,8 @@
   "entrypoints": [
     "static/js/runtime-main.6ce589d8.js",
     "static/css/2.54b769b1.chunk.css",
-    "static/js/2.bd0a65e1.chunk.js",
-    "static/css/main.21f339a2.chunk.css",
-    "static/js/main.e146f121.chunk.js"
+    "static/js/2.7cfaa6be.chunk.js",
+    "static/css/main.20114254.chunk.css",
+    "static/js/main.82dd8720.chunk.js"
   ]
 }
