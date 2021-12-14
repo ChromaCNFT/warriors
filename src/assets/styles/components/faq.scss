@@ -1,0 +1,77 @@
+@import "../variables";
+.faq{
+  display: flex;
+  flex-direction: column;
+  margin:140px auto;
+  width: 100%;
+  max-width: 970px;
+  @media only screen and (max-width: 900px) {
+    width: calc(100% - 40px);
+  }
+  .title{
+    font-family: $equalize;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 160%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .faqContainer{
+    .faqAccordion{
+      background: rgba(48, 48, 48, 0.5);
+      box-sizing: border-box;
+      backdrop-filter: blur(10px);
+    }
+    .faqAccordionTitle{
+      font-family: "Equalize", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.04em;
+      color: #EEEEEE;
+      padding: 31px;
+      display: flex;
+      @media only screen and (max-width: 900px) {
+        font-size: 12px;
+        padding: 0;
+      }
+    }
+    .faqAccordionText{
+      font-family: $poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 180%;
+      color: #EEEEEE;
+      opacity: 0.7;
+      padding-left: 31px;
+      @media only screen and (max-width: 900px) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+.faqIconClosed{
+  display: block;
+}
+.faqIconOpened{
+  display: none;
+}
+.Mui-expanded{
+  .faqIconClosed{
+    display: none;
+  }
+  .faqIconOpened{
+    display: block;
+  }
+}
+.css-6cluhv-MuiButtonBase-root-MuiAccordionSummary-root .MuiAccordionSummary-content{
+  @media only screen and (max-width: 900px) {
+    margin: 20px 0;
+    margin-left: 0 !important;
+  }
+}

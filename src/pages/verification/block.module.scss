@@ -1,0 +1,121 @@
+@import '../../assets/styles/app.scss';
+
+
+.block {
+
+  .title {
+    white-space: nowrap;
+    font-family: $equalize;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 140%;
+    color: #EEEEEE;
+
+    @include desktop() {
+      font-size: 16px;
+    }
+  }
+
+  .textBlock {
+    background: #2D2C2C;
+    border: 2px solid rgba(255, 255, 255, 0.04);
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 10px;
+
+    @include desktop() {
+      margin-top: 20px;
+    }
+
+    .valueWrapper {
+      flex-grow: 1;
+      padding: 12px 16px;
+
+      font-family: $poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: #FFFFFF;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @include desktop() {
+        font-size: 20px;
+      }
+
+      span:nth-child(2) {
+        color: grey;
+      }
+
+    }
+
+    .input {
+      position: fixed;
+      top: -999px;
+      left: -9999px;
+    }
+
+    .btn {
+      flex-shrink: 0;
+      cursor: pointer;
+      border: none;
+      width: 43px;
+      height: 43px;
+      background: linear-gradient(180deg, rgba(228, 51, 30, 0.75) 0%, #53130C 111.86%);
+      box-shadow: 0px 50px 60px -20px rgba(252, 27, 0, 0.35);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(1.1);
+      position: relative;
+
+      @include desktop() {
+        width: 52px;
+        height: 52px;
+      }
+
+      .iconCopy {
+        transition: 0.4s;
+        opacity: 1;
+
+        &_hide {
+          opacity: 0;
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .iconCheck {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.4s;
+
+        &_show {
+          opacity: 1;
+        }
+
+        svg {
+          width: 42px;
+          height: 42px;
+        }
+      }
+
+    }
+
+
+  }
+
+
+
+
+}

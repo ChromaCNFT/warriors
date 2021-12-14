@@ -1,0 +1,135 @@
+@import '../../assets/styles/app.scss';
+
+.team {
+  padding: 60px 20px;
+
+  @include desktop() {
+    padding: 140px 0px 0px;
+  }
+
+  .inner {
+    @include desktop() {
+      width: 1110px;
+      margin: 0px auto;
+    }
+
+    .title {
+      font-family: $equalize;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 160%;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      @include desktop() {
+        font-size: 28px;
+      }
+    }
+
+    .cards {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+
+      @include desktop() {
+        margin-top: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .card {
+        background: rgba(48, 48, 48, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.04);
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 6px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px 20px;
+        position: relative;
+
+        @include desktop() {
+          padding: 0px 0px 30px;
+          width: 310px;
+        }
+
+        &:not(:first-child) {
+          margin-top: 50px;
+
+          @include desktop() {
+            margin-top: 0px;
+          }
+
+        }
+
+        .blur {
+          position: relative;
+          width: 280px;
+          height: 280px;
+          background: radial-gradient(50% 50% at 50% 50%, #FC1B00 0%, rgba(252, 27, 0, 0) 100%);
+          opacity: 0.6;
+          filter: blur(9px);
+
+          @include desktop() {
+            width: 310px;
+            height: 333px;
+          }
+
+        }
+
+        img {
+          position: absolute;
+          width: 280px;
+          height: auto;
+          top: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+
+          @include desktop() {
+            width: 370px;
+            height: auto;
+          }
+        }
+
+        .name {
+          font-family: $equalize;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 110%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #EEEEEE;
+          text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .text {
+          margin-top: 15px;
+          width: 213px;
+          font-family: $poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 180%;
+          text-align: center;
+          color: #FFFFFF;
+
+          @include desktop() {
+            font-size: 16px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+}

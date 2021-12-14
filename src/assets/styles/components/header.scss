@@ -1,0 +1,229 @@
+@import "../variables";
+.header{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: 1170px;
+  height: 133px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  @media only screen and (max-width: 900px) {
+    padding: 20px;
+    height: unset;
+    z-index: 900;
+  }
+  .logo{
+    width: 232px;
+    height: 78px;
+    @media only screen and (max-width: 900px) {
+      width: 130px;
+      height: 45px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+    a{
+      display: flex;
+      font-family: $poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #F3F3F3;
+      text-decoration: none;
+      margin: 0 15px;
+      justify-content: center;
+      position: relative;
+
+      &:hover{
+        &:after{
+          display: flex;
+        }
+      }
+      &:after{
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        width: 34px;
+        height: 3px;
+        background: linear-gradient(180deg, rgba(228, 51, 30, 0.75) 0%, #53130C 111.86%);
+        display: none;
+      }
+    }
+  }
+  .socials{
+    display: flex;
+    align-items: center;
+    button{
+      overflow: hidden;
+      outline: none;
+    }
+    .twitterButton{
+      display: flex;
+      width: 48px;
+      height: 48px;
+      justify-content: center;
+      align-items: center;
+      background: rgba(48, 48, 48, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-sizing: border-box;
+      backdrop-filter: blur(10px);
+      border-radius: 6px;
+      transition: 0.5s;
+      cursor: pointer;
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
+      &:hover{
+        background: rgba(48, 48, 48, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 6px;
+      }
+    }
+    .discordButton{
+      font-family: $playBold;
+      display: flex;
+      width: 170px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background: linear-gradient(180deg, #FC1B00 0%, rgba(252, 27, 0, 0.5) 39.58%, rgba(252, 27, 0, 0.2) 100%);
+      box-shadow: 0 50px 60px -20px rgba(252, 27, 0, 0.35), inset -8px -4px 24px rgba(79, 0, 0, 0.5), inset 8px 4px 24px #FF5541;
+      border-radius: 6px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 110%;
+      letter-spacing: 0.02em;
+      color: #EEEEEE;
+      text-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      margin-left: 28px;
+      cursor: pointer;
+      transition: 0.5s;
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
+      &:hover{
+        background: rgba(228, 51, 30, 0.75);
+        box-shadow: 0px 50px 60px -20px rgba(252, 27, 0, 0.5);
+        border-radius: 6px;
+      }
+      img{
+        margin-right: 7px;
+      }
+    }
+    .mobileDiscord{
+      background: rgba(48, 48, 48, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-sizing: border-box;
+      backdrop-filter: blur(10px);
+      border-radius:6px;
+      width: 36px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      @media only screen and (max-width: 900px) {
+        display: flex;
+      }
+      img{
+        width: 14px;
+        height: 16px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .mobileMenuButton{
+      background: linear-gradient(180deg, #FC1B00 0%, rgba(252, 27, 0, 0.5) 39.58%, rgba(252, 27, 0, 0.2) 100%);
+      box-shadow: 0 50px 60px -20px rgba(252, 27, 0, 0.35), inset -8px -4px 24px rgba(79, 0, 0, 0.5), inset 8px 4px 24px #FF5541;
+      border-radius:6px;
+      width: 36px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      margin-left: 10px;
+      display: none;
+      @media only screen and (max-width: 900px) {
+        display: flex;
+      }
+    }
+  }
+  .mobileContainer{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0F0E0E;
+    z-index: 9999;
+    transition: 0.5s;
+    @media only screen and (max-width: 900px) {
+      display: flex;
+    }
+    .topSide{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 24px 20px;
+      align-items: center;
+      .closeButton{
+        background: rgba(48, 48, 48, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 32px;
+        height: 32px;
+      }
+    }
+    nav{
+      display: flex;
+      flex-direction: column;
+      a{
+        font-family: $equalize;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #EEEEEE;
+        margin-bottom: 40px;
+      }
+    }
+    .socials{
+      display: flex;
+      .twitterButton, .discordButton{
+        display: flex;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .rightPosition{
+    right: 0;
+  }
+}

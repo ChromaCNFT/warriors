@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+
+}
+a{
+  text-decoration: none;
+}
+.slick-prev{
+  background-image: url("../../assets/images/leftarrow.png") !important;
+  z-index: 300;
+}
+.slick-next{
+  background-image: url("../../assets/images/rightarrow.png") !important;
+  z-index: 300;
+}
+#app{
+  overflow: hidden;
+}
+.mobile{
+  display: none;
+  @media only screen and (max-width: 900px) {
+    display: inline;
+  }
+}
+.desktop{
+  display: inline;
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
+}
+@import "components/mint";
+@import "components/about-us";
+@import "components/collection";
+@import "components/roadmap";
+@import "components/faq";
+@import "components/footer";

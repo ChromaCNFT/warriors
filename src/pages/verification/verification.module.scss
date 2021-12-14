@@ -1,0 +1,349 @@
+@import '../../assets/styles/app.scss';
+
+.verification {
+  padding: 0px 20px 20px;
+
+  @include desktop() {
+    padding: 0px 0px 20px;
+  }
+
+  .inner {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    padding: 20px 20px 320px;
+
+    @include desktop() {
+      width: 1170px;
+      margin: 0 auto;
+      padding: 40px 0px;
+    }
+
+    .verificationBlock {
+      background: rgba(48, 48, 48, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(10px);
+      border-radius: 6px;
+      padding: 20px;
+
+      @include desktop() {
+        margin: 0 auto;
+        padding: 75px;
+        width: 630px;
+        margin: 0 auto;
+      }
+
+      &_verificated {
+        @include desktop() {
+          width: 812px;
+        }
+      }
+
+      .title {
+        font-family: $equalize;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+
+        @include desktop() {
+          font-size: 32px;
+        }
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        @include desktop() {
+          margin-top: 50px;
+          flex-direction: row;
+        }
+
+        .inputBlock {
+          background: #2D2C2C;
+          border: 2px solid rgba(255, 255, 255, 0.04);
+          box-sizing: border-box;
+          border-radius: 6px;
+          display: flex;
+
+          .textWrapper {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            padding: 12px 24px 12px 16px;
+            border-right: 2px solid rgba(255, 255, 255, 0.04);
+            position: relative;
+
+            @include desktop() {
+              padding: 16px 24px 16px 16px;
+            }
+
+            .text {
+              position: relative;
+              z-index: 1;
+              font-family: $poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 140%;
+              color: #EEEEEE;
+
+              @include desktop() {
+                font-size: 20px;
+              }
+            }
+
+            .equal {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translate(50%, -50%);
+              z-index: 2;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.04);
+              backdrop-filter: blur(4px);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              font-family: $poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 140%;
+              color: #EEEEEE;
+
+              @include desktop() {
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+              }
+            }
+
+          }
+
+          .inputWrapper {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 12px 16px 12px 30px;
+
+            @include desktop() {
+              padding: 16px 16px 16px 30px;
+            }
+
+            .input {
+              width: 100% !important;
+              background: none;
+              border: none;
+
+              font-family: $poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 140%;
+              color: #EEEEEE;
+
+              @include desktop() {
+                font-size: 20px;
+              }
+
+              &:focus-visible {
+                outline: none;
+              }
+
+            }
+          }
+
+
+        }
+
+        .confirm {
+          cursor: pointer;
+          max-width: 100%;
+          border: none;
+          background: linear-gradient(180deg, rgba(228, 51, 30, 0.75) 0%, #53130C 111.86%);
+          box-shadow: 0px 50px 60px -20px rgba(252, 27, 0, 0.35);
+          border-radius: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 18px 0px;
+          margin-top: 20px;
+          font-family: Equalize;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 110%;
+          letter-spacing: 0.02em;
+          text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4);
+          color: #FFF;
+          //transition: 0.3s;
+
+          @include desktop() {
+            padding: 25px 72px;
+            margin-top: 0px;
+            margin-left: 20px;
+          }
+
+          &:hover {
+            background: rgba(228, 51, 30, 0.75);
+            box-shadow: 0px 50px 60px -20px rgba(252, 27, 0, 0.5);
+          }
+
+
+        }
+
+
+      }
+
+      .items {
+        margin-top: 20px;
+
+        @include desktop() {
+          margin-top: 40px;
+        }
+
+        .item {
+          font-family: $poppins;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 180%;
+          color: white;
+
+          @include desktop() {
+            font-size: 16px;
+          }
+
+          &:not(:first-child) {
+            margin-top: 16px;
+
+            @include desktop() {
+              margin-top: 20px;
+            }
+          }
+
+          span:first-child {
+            color: #E2311B;
+          }
+
+        }
+
+      }
+
+      .note {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 180%;
+        margin-top: 16px;
+
+        @include desktop() {
+          margin-top: 20px;
+        }
+
+        span:first-child {
+          text-transform: uppercase;
+          color: white;
+        }
+
+        span:last-child {
+          color: grey
+        }
+      }
+
+      .firstBlock {
+        margin-top: 20px;
+
+        @include desktop() {
+          margin-top: 50px;
+        }
+      }
+
+      .secondBlockWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        @include desktop() {
+          margin-top: 50px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 20px;
+        }
+
+        .secondBlock {}
+
+        .selectWrapper {
+          margin-top: 20px;
+
+          @include desktop() {
+            margin-top: 0;
+          }
+
+
+          .title {
+            white-space: nowrap;
+            text-align: left;
+            font-family: $equalize;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 140%;
+            color: #EEEEEE;
+
+            @include desktop() {
+              font-size: 16px;
+            }
+          }
+
+          .select {
+            //color: #FFF!important;
+            margin-top: 10px;
+
+            @include desktop() {
+              margin-top: 20px;
+            }
+
+            fieldset {
+              border: 2px solid rgba(255, 255, 255, 0.04)!important;
+            }
+
+            svg {
+              width: 23px;
+              height: 23px;
+              color: white!important;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.04)!important;
+              backdrop-filter: blur(4px)!important;
+              right: 15px!important;
+
+              @include desktop() {
+                width: 30px!important;
+                height: 30px!important;
+                top: 50%!important;
+                transform: translateY(-50%)!important;
+              }
+            }
+
+
+          }
+
+
+        }
+
+
+      }
+
+    }
+
+  }
+}
