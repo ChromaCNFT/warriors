@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/warriors/static/css/main.9ef4b236.chunk.css",
-    "main.js": "/warriors/static/js/main.5fa0be92.chunk.js",
-    "main.js.map": "/warriors/static/js/main.5fa0be92.chunk.js.map",
+    "main.js": "/warriors/static/js/main.a19fc0f2.chunk.js",
+    "main.js.map": "/warriors/static/js/main.a19fc0f2.chunk.js.map",
     "runtime-main.js": "/warriors/static/js/runtime-main.6ce589d8.js",
     "runtime-main.js.map": "/warriors/static/js/runtime-main.6ce589d8.js.map",
     "static/css/2.54b769b1.chunk.css": "/warriors/static/css/2.54b769b1.chunk.css",
@@ -42,7 +42,7 @@
     "static/media/head9.0cc70cb5.png": "/warriors/static/media/head9.0cc70cb5.png",
     "static/media/head_0.a21c85a3.png": "/warriors/static/media/head_0.a21c85a3.png",
     "static/media/head_1.d9f3c8e4.png": "/warriors/static/media/head_1.d9f3c8e4.png",
-    "static/media/head_2.84e17c18.png": "/warriors/static/media/head_2.84e17c18.png",
+    "static/media/head_2.fc478849.png": "/warriors/static/media/head_2.fc478849.png",
     "static/media/herous.9d4c1fe8.png": "/warriors/static/media/herous.9d4c1fe8.png",
     "static/media/intelligence.a269b90b.svg": "/warriors/static/media/intelligence.a269b90b.svg",
     "static/media/logo.61b20fac.svg": "/warriors/static/media/logo.61b20fac.svg",
@@ -64,6 +64,6 @@
     "static/css/2.54b769b1.chunk.css",
     "static/js/2.bcf0e9ec.chunk.js",
     "static/css/main.9ef4b236.chunk.css",
-    "static/js/main.5fa0be92.chunk.js"
+    "static/js/main.a19fc0f2.chunk.js"
   ]
 }
