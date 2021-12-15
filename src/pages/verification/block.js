@@ -30,7 +30,7 @@ export const Block = ({className = '', title, value, isPrice = false}) => {
                 <div className={style.valueWrapper}>
                     <span>{value}</span> {isPrice && <span>ADA</span>}
                 </div>
-                <input className={style.input} ref={ref} value={valueFinal} readOnly={true}/>
+                <input className={style.input} ref={ref} value={value} readOnly={true}/>
                 <button className={style.btn}
                         onClick={() => {
                             console.log(ref.current)
