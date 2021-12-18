@@ -1,4 +1,4 @@
-export const dateEnd = new Date(2021, 11, 17, 9, 00, 00); // дата окончания
+export const dateEnd = new Date(2021, 11, 17, 7, 00, 00); // дата окончания
 
 export const convertToTwoDigit = (num) => num > 9 ? String(num) : `0${num}`;
 
