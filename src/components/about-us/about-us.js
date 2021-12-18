@@ -12,8 +12,8 @@ const AboutUs = () => {
                 <p>
                     Century Warriors is a two-part NFT series created on
                     the Cardano blockchain. With unique hand drawn attributes,
-                    the community will be able to fuse the part 1 – head and
-                    part 2 – body to create their own unique Century Warrior.
+                    the community will be able to fuse, part 1 – head and
+                    part 2 – body, to create their own unique Century Warrior.
                 </p>
                 <p>
                     The art is based on real life warriors that have been
