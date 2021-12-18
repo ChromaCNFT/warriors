@@ -7,15 +7,15 @@ export const items = [
     },
     {
         number: '02.',
-        text: 'Copy the address below and paste it into wallet ',
+        text: 'Copy the address below and paste it into your wallet ',
     },
     {
         number: '03.',
-        text: 'Copy the ADA amount and paste it into wallet ',
+        text: 'Copy the ADA amount and paste it into your wallet ',
     },
     {
         number: '04.',
-        text: 'Send the transaction, your CNFT will appear in your Cardano wallet',
+        text: 'Send the transaction and your CNFT will appear in your Cardano wallet',
     },
 ];
 
