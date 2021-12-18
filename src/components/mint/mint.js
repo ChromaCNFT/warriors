@@ -15,7 +15,7 @@ const Mint = () => {
     const [start, setStart] = useState(false);
 
     useEffect(() => {
-        const time = new Date(dateEnd.getTime("Dec 18, 2021 10:00:00") - new Date().getTime()).getTime();
+        const time = new Date(dateEnd.getTime() - new Date().getTime()).getTime();
         if (time > 0 && !timeIsOver) {
             setTime(time);
             setStart(true);
