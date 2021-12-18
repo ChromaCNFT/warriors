@@ -51,8 +51,8 @@ const Mint = () => {
                         warrior with incredible hand drawn art
                     </p>
                     <HashLink
-                        to='/'
-                        //to='/ver'
+                        //to='/'
+                        to='/ver'
                         smooth={true}
                     >
                         MINT
