@@ -50,8 +50,10 @@ const Mint = () => {
                         NFT, you have an opportunity to create your own 
                         warrior with incredible hand drawn art
                     </p>
-                    <HashLink to='/ver'
-                              smooth={true}
+                    <HashLink 
+                        //to='/ver'
+                        to='/ver'
+                        smooth={true}
                     >
                         MINT
                     </HashLink>
