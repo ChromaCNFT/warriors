@@ -10,8 +10,8 @@ export const cards = [
     },
     {
         src: src1,
-        name: 'chroma',
-        text: 'Co-founder, project developer, internal/external, project manager',
+        name: 'Chroma',
+        text: 'Co-founder, project developer, programmer and data analyst',
     },
     {
         src: src2,
