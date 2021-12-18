@@ -23,7 +23,7 @@ const AboutUs = () => {
                 </p>
                 <p>
                     Century Warriors will give individuals the ability to be a part
-                    of history and see through the eyes of the warriors that have
+                    of history and see through the eyes of warriors that have
                     populated the world we live in.
                 </p>
                 <a href='https://centurywarriors.s3.us-east-2.amazonaws.com/Whitepaper+V1.1.pdf'
