@@ -16,7 +16,7 @@ const AboutUs = () => {
                     part 2 – body, to create their own unique Century Warrior.
                 </p>
                 <p>
-                    The art is based on real warriors that have been
+                    The art is based on real warriors who have been
                     battling throughout the centuries. The goal is to relive
                     the past of these amazing fighters and bring them into the
                     digital age we are currently in.
