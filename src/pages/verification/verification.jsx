@@ -133,7 +133,7 @@ export const Verification = () => {
                                     <span>*NOTE:*</span> <span>{note}</span>
                                 </p>
 
-                                <Block value='addr1v9a6hlqcderhqraeu9j7wlkzl260rcl3rz7w2lz7squ9wrq39su44'
+                                <Block value='null'
                                        title='wallet address:'
                                        className={style.firstBlock}
                                 />
